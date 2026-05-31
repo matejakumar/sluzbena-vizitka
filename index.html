@@ -17,6 +17,19 @@
             justify-content: center;
             align-items: center;
         }
+        /* Prvi podnapis: odebeljen (bold) */
+.subtitle {
+    font-weight: bold;
+    font-size: 16px; /* Po želji prilagodi velikost */
+    margin-bottom: 5px; /* Malo razmika pred naslednjo vrstico */
+}
+
+/* Drugi podnapis: manjši in navaden (ne bold) */
+.sub-subtitle {
+    font-weight: normal; /* To poskrbi, da ni bold */
+    font-size: 14px;    /* Manjša pisava */
+    color: #555555;     /* Po želji: malo svetlejša siva barva, da se še bolj razlikuje */
+}
         /* Stil za video ozadje */
         #video-background {
             position: fixed;
@@ -94,7 +107,7 @@
     
     <h1>Mateja Kumar</h1>
     <div class="subtitle">Univerzitetni rehabilitacijski inštitut Republike Slovenije Soča</div>
-    <div class="subtitle">Služba za trženje</div>
+    <div class="sub-subtitle">Služba za trženje</div>
     <div class="links">
         <a href="https://www.linkedin.com/in/mateja-kumar-1a1957225/" class="btn btn-linkedin" target="_blank">LinkedIn Profile</a>
         <a href="https://www.facebook.com/mateja.kumar" class="btn btn-facebook" target="_blank">Facebook Profile</a>
