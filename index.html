@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mateja Kumar - Digitalna Vizitka</title>
     <style>
-        *{box-sizing:border-box;}
-        body.html {
-            margin:0;
+        * { box-sizing: border-box; }
+        body, html {
+            margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
@@ -17,42 +17,42 @@
             justify-content: center;
             align-items: center;
         }
-        /*Stil za video ozadje*/
+        /* Stil za video ozadje */
         #video-background {
             position: fixed;
             right: 0;
             bottom: 0;
-            min-width: 100%;           
+            min-width: 100%;
             min-height: 100%;
             width: auto;
-            hight: auto;
-            z-idex: -100;
+            height: auto;
+            z-index: -100;
             object-fit: cover;
-            background: linear-gradient)135deg,#f5f7fa 0%, #c3cfe2 100%);/*Rešitev, če se video ne naloži*/
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Rešitev, če se video ne naloži */
         }
-        /*Temna plast čez video za boljšo berljivost*/
+        /* Temna plast čez video za boljšo berljivost */
         .overlay {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            height:100%;
-            background: rgba(0;0;0;0.3);/*številka 0.3 določa zatemnitev videa*/ 
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3); /* Številka 0.3 določa zatemnitev videa */
             z-index: -99;
-            } 
-           /*Kartica vizitke*/ 
+        }
+        /* Kartica vizitke */
         .card {
-            background: rgba(255,255,255,0.9);/*Rahlo prosojno belo ozadje kartice*/
-            backdrop-filter: blur(10px);/*Učinek zamegljenega stekla za kartico*/
+            background: rgba(255, 255, 255, 0.9); /* Rahlo prosojno belo ozadje kartice */
+            backdrop-filter: blur(10px); /* Učinek zamegljenega stekla za kartico */
             padding: 30px;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
             text-align: center;
             max-width: 350px;
-            width: 100%;
+            width: 90%;
             z-index: 1;
-            max-height:95vh;
-            overflow-y:auto;
+            max-height: 95vh;
+            overflow-y: auto;
         }
         .profile-img {
             width: 120px;
@@ -62,7 +62,7 @@
             border: 4px solid #0077b5;
         }
         h1 { margin: 15px 0 5px 0; font-size: 24px; color: #222; }
-        .subtitle { color: #666; font-size: 16px; margin-bottom: 20px; }
+        .subtitle { color: #555; font-size: 16px; margin-bottom: 20px; font-weight: 500; }
         .links { display: flex; flex-direction: column; gap: 10px; }
         .btn {
             display: block;
@@ -76,32 +76,34 @@
         .btn-facebook { background-color: #1877f2; color: white; }
         .btn-email { background-color: #333; color: white; }
         .btn:hover { transform: translateY(-2px); opacity: 0.9; }
-        .qr-section { margin-top: 25px; border-top: 1px solid #eee; padding-top: 20px; }
+        .qr-section { margin-top: 25px; border-top: 1px solid #ddd; padding-top: 20px; }
         .qr-section p { font-size: 12px; color: #557; margin-bottom: 5px; }
     </style>
 </head>
 <body>
+
 <video autoplay loop muted playsinline id="video-background">
-    <source src="background_video.mp4" type="video/mp4">
+    <source src="ozadje.mp4" type="video/mp4">
     Vaš brskalnik ne podpira video značke.
-    </video>
-<div class="ovarlay"></div>
-    
+</video>
+
+<div class="overlay"></div>
+
 <div class="card">
-    <img src="Mateja Kumar slika.jpg" alt="Mateja Kumar" class="profile-img">
+    <img src="slika.jpg" alt="Mateja Kumar" class="profile-img">
     
     <h1>Mateja Kumar</h1>
-    <div class="subtitle">Strokovnjakinja za digitalno komuniciranje & Marketing</div>
+    <div class="subtitle">Strokovnjakinja za komuniciranje & Marketing</div>
     
     <div class="links">
-        <a href="https://www.linkedin.com/in/mateja-kumar-1a1957225/" class="btn btn-linkedin" target="_blank">LinkedIn Profil</a>
-        <a href="https://www.facebook.com/mateja.kumar" class="btn btn-facebook" target="_blank">Facebook Profil</a>
-        <a href="mailto:mateja.kumar@ir-rs.si" class="btn btn-email">Pišite mi </a>
+        <a href="TVOJ_LINKEDIN_LINK" class="btn btn-linkedin" target="_blank">LinkedIn Profile</a>
+        <a href="TVOJ_FACEBOOK_LINK" class="btn btn-facebook" target="_blank">Facebook Profile</a>
+        <a href="mailto:tvoj.email@gmail.com" class="btn btn-email">Pošlji E-mail</a>
     </div>
 
     <div class="qr-section">
-        <p>Skenirajte za shranjevanje stika</p>
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://matejakumar.github.io/vizitka_1/" alt="QR Koda">
+        <p>Skeniraj za shranjevanje stika</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://matejakumar.com" alt="QR Koda">
     </div>
 </div>
 
