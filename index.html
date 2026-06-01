@@ -92,6 +92,12 @@
         .btn:hover { transform: translateY(-2px); opacity: 0.9; }
         .qr-section { margin-top: 25px; border-top: 1px solid #ddd; padding-top: 20px; }
         .qr-section p { font-size: 12px; color: #557; margin-bottom: 5px; }
+        <head>
+
+        .social-container { display: flex; gap: 20px; ... }
+        .social-icon { ... }
+        /* ... preostali CSS ... */
+  
     </style>
 </head>
 <body>
@@ -109,12 +115,12 @@
     <h1>Mateja Kumar</h1>
     <div class="subtitle">Univerzitetni rehabilitacijski inštitut Republike Slovenije Soča</div>
     <div class="sub-subtitle">Služba za trženje</div>
-    <div class="links">
-        <a href="https://www.linkedin.com/in/mateja-kumar-1a1957225/" class="btn btn-linkedin" target="_blank">LinkedIn Profile</a>
-        <a href="https://www.facebook.com/mateja.kumar" class="btn btn-facebook" target="_blank">Facebook Profile</a>
-        <a href="mateja.kumar@ir-rs.si" class="btn btn-email">Pišite mi</a>
-    </div>
 
+    <div class="social-container">
+        <a href="https://www.linkedin.com/in/mateja-kumar-1a1957225/" class="social-icon linkedin"></a>
+        <a href="https://www.facebook.com/mateja.kumar" class="social-icon facebook"></a>
+        <a href="mateja.kumar@ir-rs.si" class="social-icon email"></a>
+    </div>
     <div class="qr-section">
         <p>Skeniraj za shranjevanje stika</p>
         <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://matejakumar.github.io/sluzbena-vizitka/" alt="QR Koda">
